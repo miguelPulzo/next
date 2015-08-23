@@ -1,12 +1,10 @@
 {
-    "name": "ubuntu/compudirectorio",
-    "license": "proprietary",
+    "name": "symfony/framework-standard-edition",
+    "license": "MIT",
     "type": "project",
+    "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
-        "psr-4": {
-            "": "src/",
-            "SymfonyStandard\\": "app/SymfonyStandard/"
-        }
+        "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
     },
     "require": {
         "php": ">=5.3.9",
@@ -56,6 +54,9 @@
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "2.7-dev"
         }
     }
 }
